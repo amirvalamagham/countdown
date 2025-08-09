@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUSTOM COUNTDOWN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=x.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video class="video-container" loop autoplay muted>
+  <source src="time.mp4">
+</video>
+<div class="overlay"></div>
+
+
+<div class="input-container">
+
+  <div class="container">
+  <h2>create a custom countdown!</h2>
+  <form class="countdown-form">
+    <label for="countdown-title">Title</label>
+    <input type="text" id="countdown-title" placeholder="What Are You Counting Down?">
+    <label for="countdown-title">Select a Date</label>
+    <input type="date" id="countdown-date" placeholder="What Are You Counting Down?">
+    <button type="submit" class="submitBut">SUBMIT</button>
+  </form>
+
+</div>
+
+<div class="coundown-container" hidden>
+<div class="countdown">
+  <h2 class="c-title"></h2>
+  <ul> 
+    <li><span class="number">0</span><span class="unit">Days </span></li>
+    <li><span class="number">0</span><span class="unit">Hours</span></li>
+    <li><span class="number">0</span><span class="unit">Minutes </span></li>
+    <li><span class="number">0</span><span class="unit">Seconds </span></li>
+  </ul>
+  <button class="reset">RESER</button>
+</div>
+</div>
+
+<div class="complete-coundown">
+  <div class="complete" hidden>
+    <h2 class="complete-title">countdown complete!</h2>
+    <h2 class="complete-finish">countdown finished on 05-05-2025</h2>
+    <button class="newOne">Start New Countdown</button>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- Scripts -->
+ <script src="script.js"></script>
+</body>
+</html>

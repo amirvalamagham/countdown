@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.video-container{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.overlay{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.input-container{
+  width:680px;
+  height: 404px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  z-index: 2;
+  border-radius: 10px;
+  padding: 25px 50px;
+}
+label{
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 25px;
+}
+input{
+all: unset;
+background-color: white;
+border-radius: 30px;
+width: 80%;
+padding: 12px;
+height: 25px;
+}
+h2{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+button{
+  all: unset;
+  background-color: #006959;
+  border-radius: 30px; 
+  text-align: center;
+  width: 80%;
+  height: 25px;
+  padding: 12px;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover{
+  filter: brightness(110%);
+  transform: scale(105%);
+}
+.countdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+ul{
+  margin-top: 30px;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+li{
+  margin-right: 20px;
+  text-align: center;
+}
+.number{
+  display: block;
+  font-size: 50px;
+}
+.unit{
+  font-size: 25px;
+}
+
+.complete{
+  text-align: center;
+}
+.complete-title{
+  animation: complete 4s infinite;
+  margin-bottom: 35px;
+}
+@keyframes complete{
+  0%{
+    color: red;
+  }
+  25%{
+    color: yellow;
+  }
+  50%{
+    color: rgb(8, 187, 8);
+    transform: scale(1.5);
+  }
+  75%{
+    color: blue;
+  }
+  100%{
+    color: purple;
+  }
+}
+
+
+@media screen and (max-width:768px){
+
+    video{
+      object-position: 80%;
+    }
+  .input-container{
+    margin: 0 20px;
+  }
+
+}
